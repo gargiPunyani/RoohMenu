@@ -11,7 +11,7 @@ export const reservationSchema = Yup.object({
     .matches(emailregex, "invalid email")
     .required("Enter Email"),
   phone: Yup.string().required("Enter Phone Number").length(10,"10 digit number is allowed"),
-  people: Yup.string().max(10).required("Enter number of People"),
+  people: Yup.string().max(50).required("Enter number of People"),
   date: Yup.date().required("Enter date"),
   time: Yup.string().required("Enter time slot"),
 });

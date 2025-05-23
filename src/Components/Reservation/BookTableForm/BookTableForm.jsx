@@ -152,8 +152,8 @@ const BookTableForm = () => {
                     type="number"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    placeholder="Number of people 1-10"
-                    max={10}
+                    placeholder="Number of people 1-50"
+                    max={50}
                     min={0}
                   />
                   {errors.people && touched.people ? (
@@ -206,14 +206,14 @@ const BookTableForm = () => {
                   placeholder="Message"
                 />
               </div>
-              <div className="mt20 pointer" onClick={handleSubmit}>
+              {/* <div className="mt20 pointer" onClick={handleSubmit}> */}
                 <button
                   className="submit borderRadius12 uppercase font16 pointer "
                   type="submit"
                 >
                   Reserve Table
                 </button>
-              </div>
+              {/* </div> */}
             </div>
           </form>
         </div>
