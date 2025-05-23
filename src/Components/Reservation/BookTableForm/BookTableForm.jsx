@@ -50,7 +50,10 @@ const BookTableForm = () => {
             message,
             current_year: new Date().getFullYear(),
           });
-        } catch (err) {}
+          console.log(res)
+        } catch (err) {
+          console.log(err)
+        }
 
         // 2. Send Email via EmailJS
         try {
@@ -70,11 +73,14 @@ const BookTableForm = () => {
             },
             import.meta.env.VITE_PUBLIC_ID
           );
-        } catch (error) {}
+        } catch (error) {
+          console.log(error)
+        }
 
         // 3. Reset form and alert
         action.resetForm();
         alert("Our team will contact you soon");
+        console.log(errors)
       },
     });
 
@@ -206,14 +212,14 @@ const BookTableForm = () => {
                   placeholder="Message"
                 />
               </div>
-              {/* <div className="mt20 pointer" onClick={handleSubmit}> */}
+              <div className="mt20 pointer">
                 <button
                   className="submit borderRadius12 uppercase font16 pointer "
                   type="submit"
                 >
                   Reserve Table
                 </button>
-              {/* </div> */}
+              </div>
             </div>
           </form>
         </div>
