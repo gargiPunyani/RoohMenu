@@ -50,13 +50,12 @@ const BookTableForm = () => {
             message,
             current_year: new Date().getFullYear(),
           });
-        } catch (err) {
-        }
+        } catch (err) {}
 
         // 2. Send Email via EmailJS
         try {
           await emailjs.send(
-            //  'smtp_roohcafe',   
+            //  'smtp_roohcafe',
             import.meta.env.VITE_SERVICE_ID,
             import.meta.env.VITE_TEMPLATE_ID,
             {
@@ -71,14 +70,12 @@ const BookTableForm = () => {
             },
             import.meta.env.VITE_PUBLIC_ID
           );
-        } catch (error) {
-        }
+        } catch (error) {}
 
         // 3. Reset form and alert
         action.resetForm();
         alert("Our team will contact you soon");
       },
-
     });
 
   return (
@@ -91,7 +88,8 @@ const BookTableForm = () => {
             </div>
             <div className="reservePara h5 mt20 secondaryColor">
               <p>
-                Secure your spot at Rooh, where Indian curries, Mexican hotpots, and signature rolls create an unforgettable dining experience.
+                Secure your spot at Rooh, where Indian curries, Mexican hotpots,
+                and signature rolls create an unforgettable dining experience.
               </p>
             </div>
           </div>
@@ -208,7 +206,7 @@ const BookTableForm = () => {
                   placeholder="Message"
                 />
               </div>
-              <div className="mt20 pointer">
+              <div className="mt20 pointer" onClick={handleSubmit}>
                 <button
                   className="submit borderRadius12 uppercase font16 pointer "
                   type="submit"

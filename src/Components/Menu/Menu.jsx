@@ -21,7 +21,7 @@ const Menu = () => {
         )}
       </div>
       <Navbar />
-      <div className="menuHead uppercase h1 absolute  primaryColor">
+      {/* <div className="menuHead uppercase h1 absolute  primaryColor">
         <h1>
        {categoryParam === "beverages"
       ? "Beverages"
@@ -29,7 +29,7 @@ const Menu = () => {
       ? "Food"
       : "Menu"}
       </h1>
-      </div>
+      </div> */}
       <div className="menuListItemOuterMost mt10">
         <MenuListItems />
       </div>

@@ -31,7 +31,16 @@ const MenuListItems = () => {
   return (
     <div className="menuRight">
       <div className="menuRightOuter borderRadius12">
-        <div className="menuRightInner mt20">
+          <div className="menuHead uppercase h1 textCenter  primaryColor">
+        <h1>
+       {categoryParam === "beverages"
+      ? "Beverages"
+      : categoryParam === "food"
+      ? "Food"
+      : "Menu"}
+      </h1>
+      </div>
+        <div className="menuRightInner ">
           <div className="menuData dFlex">
             <ul className="menuListItem font12 primaryColor dFlex uppercase pointer borderRadius8 gap8 aiCenter jCenter">
               {filteredMenuItems.map((items, index) => (

@@ -6,7 +6,7 @@
  .cuisineListItems{border: 1px solid #efe7d224; padding: 3px 6px; margin: 15px 0;}
 .outerMost{height: 100vh; max-width:calc(100% - 800px ); width: 100%; position: fixed; padding: 10px;}
 .menubarImage{height: 100vh; width: 100%; top: 0; }
-.menuHead{ left: 90px; padding-top: 26px; z-index: 1000; }
+/* .menuHead{ left: 90px; padding-top: 26px; z-index: 1000; } */
 .menuRightOuter{border: 1px solid #efe7d24d; width: 100%; padding: 80px 64px; background-color: #000;}
 .menuBarRightOuterMost{justify-content: center; display: flex; max-width: 751px; width: 100%; }
 .menuItems{border: 1px solid #efe7d24d; padding: 8px 10px;} 
@@ -42,18 +42,18 @@
 /* .outerMost{ max-width: calc(100% - 640px); height: 100%; width: 100%;}  */
 .menuBar{ flex-direction: column;} 
 .outerMost{height: 100vh; max-width:100%; width: 100%; position: relative; }
-.menuHead{left: 50%; transform: translateX(-50%); }
+/* .menuHead{left: 50%; transform: translateX(-50%); } */
 /* .menuRight {width: 760px;} */
 /* .cuisineImage {height: 110px;} */
 .menuBarRightOuterMost{padding: 62px 52px;}
-.menuRightOuter{padding: 40px 60px;}
+/* .menuRightOuter{padding: 40px 60px;} */
 /* .cuisine {padding: 40px 8px;} */
 
 }
 @media (max-width: 1080px){
 .menuBar{ flex-direction: column;} 
 .outerMost{height: 100vh; max-width:100%; width: 100%; position: relative; }
-.menuHead{left: 50%; transform: translateX(-50%); }
+/* .menuHead{left: 50%; transform: translateX(-50%); } */
 .menuBarRightOuterMost{padding: 10px;}
 
 }
@@ -73,7 +73,7 @@
 /* .cuisineItems{margin-top: 30px !important; flex-direction: row;} */
 /* .cuisine {padding: 40px 0;} */
 .menuBarRightOuterMost{padding: 0;}
-.menuRightOuter {padding: 40px 15px;}
+.menuRightOuter {padding: 15px;}
 /* .cuisineImage {max-width: 100%;height: 200px; width: 100%;} */
 }
 @media(max-width:500px){
