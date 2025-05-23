@@ -1,0 +1,58 @@
+.tableLeft, .tableRight{max-width: calc(100% / 2 - 8px); width: 100%; }
+.bookTableImage, .tableOuterMost {height: 100%; width: 100%;}
+.contactUsImage{top: 0; position: sticky;}
+.bookTableImage{filter: brightness(50%);}
+.tableLeftOuter{height: 100%;}
+.reservationOuter ,.reseveTable{border: 1px solid #efe7d24d; }
+.reserveTable, .reservationOuter {padding: 20px;}
+.reservationInput{max-width: calc(100% / 3); width: 100%;}
+.reserveTable{height: 100vh;}
+.reseveTable{padding: 5px;}
+.reservePara {padding: 0 28px;}
+.reservationRight{padding: 10px;}
+/* .reservationForm{padding: 28px;} */
+.reservationForm input{background: rgb(10, 11, 10); outline: none;border: 1px solid #efe7d24d; ; height: 20px; width: 100%; color: #EFE7D2 !important; padding: 20px;}
+.reservationForm ::placeholder , .inputForm::placeholder {color: #f5f2EAB3 !important; opacity: 1;}
+.reservationForm ::-ms-input-placeholder { color: #f5f2EAB3 !important;}
+.myDate{  appearance: none;  -webkit-appearance: none; position: relative; } 
+.myDate::-webkit-calendar-picker-indicator{opacity: 0; display: block; position: absolute; right: 10px; width: 20px; height: 100%; cursor: pointer;}
+.myDate::before{ content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(247, 245, 238)" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM7 12h5v5H7z"/></svg>');
+position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+/* .bookHead{bottom: 0px; left: 90px;} */
+.submit{width: 100%; padding: 20px; background-color: #EFE7D2; outline: none; border: none;}
+.reservationError{color: red; padding: 10px;}
+.resevationDetails{max-width: calc(100% / 3 - 4px); width: 100%;}
+.reservationInput {max-width: 100%;}
+.myTime{ appearance: none;  -webkit-appearance: none; position: relative; } 
+.myTime::-webkit-calendar-picker-indicator{opacity: 0; display: block; position: absolute; right: 10px; width: 20px; height: 100%; cursor: pointer;}
+
+.myTime::before {content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="rgb(247, 245, 238)" width="100" height="100" viewBox="0 0 256 256"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM16,16h-8.005c-0.55,0 -0.995,-0.445 -0.995,-0.995v-0.011c0,-0.549 0.445,-0.994 0.995,-0.994h6.005v-8.005c0,-0.55 0.445,-0.995 0.995,-0.995h0.011c0.549,0 0.994,0.445 0.994,0.995z"></path></svg>');
+    position: absolute; left: 80% ;top: 30%;}
+    
+/* responsive */
+@media (max-width:1200px) {
+.tableReservation{flex-direction: column;}
+.tableLeftOuter{height: 60vh;}
+.tableLeft, .reservationInput, .tableRight , .resevationDetails{max-width: 100%; width: 100%; }
+.reservationInput{flex-direction: column;}
+.bookHead{bottom:0px; left: 50%; transform: translateX(-50%);}
+.myTime::before{left: 96% ;}
+}
+@media (max-width:991px) {
+.reserveTable{padding: 0;}
+.bookHead{bottom: 0px;}
+
+}
+@media (max-width:786px){
+.tableLeftOuter {height: 60vh;}
+.bookHead{bottom: 0px;}
+
+}
+@media (max-width:480px) {
+.tableLeftOuter {height: 50vh;}
+.bookHead{bottom: 0px;}
+.myTime::before{left: 92% ; fill:"rgb(247, 245, 238)"}
+.bookTableImage{filter: brightness(65%);}
+.reservationInput{gap: 0 !important;}
+    
+}
